@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title%}
+LOGIN
+{%endblock%}
+
+{% block header %}
+LOG DATA
+{% endblock%}
+
+{% block link %}
+href="/view"
+{%endblock%}
+
+{% block toggle %}
+RECORDS
+{% endblock %}
+
+{% block content %}
+
+<form class="form-control form-control-lg" styele="" action="/login" method = "POST">
+    <label class="form-label">NAME</label>
+     <input type = "text" name = "name" />
+     <br>
+     <label class="form-label">AGE</label>
+     <input type = "integer" name = "age" />
+     <br>
+     <!-- <p><input type = "submit" value = "Submit" /></p> -->
+     <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block">SUBMIT</button>
+ </form>
+{% endblock%}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block title%} RECORDS {%endblock%} {% block header
+%} STUDENT TABLE {% endblock%} {% block link %} href="/form" {%endblock%} {%
+block toggle %} LOGIN {% endblock %} {% block content %}
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">NAME</th>
+      <th scope="col">AGE</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in data %}
+<tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>
+    ...
+</tr>
+{% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
